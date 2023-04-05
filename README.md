@@ -39,6 +39,9 @@ Para executar o projeto, siga os passos abaixo:
 | /user/update | POST | Atualiza usuários |
 | /user/changePassword | POST | Atualiza senha de usuário |
 | /user/forgotPassword | POST | Função esqueceu senha |
+| /category/add | POST | Adicionar nova categoria |
+| /category/get | POST | Buscar categorias |
+| /category/update | POST | Alterar categoria |
 
 ## Finalidade
 
