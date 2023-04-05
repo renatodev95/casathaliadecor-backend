@@ -4,22 +4,19 @@ Este é um projeto de backend em Java com SpringBoot para uma API que permite o 
 
 ## Funcionalidades
 
-- Cadastro, consulta, atualização e exclusão de produtos;
-- Listagem de todos os produtos;
+- Cadastro, login, consulta, atualização e exclusão de usuários;
+- Listagem de todos os usuários;
 - Listagem de produtos por categoria;
-- Cadastro, consulta, atualização e exclusão de clientes;
-- Listagem de todos os clientes;
-- Cadastro, consulta, atualização e exclusão de pedidos;
-- Listagem de todos os pedidos;
-- Listagem de pedidos por cliente;
-- Adição e remoção de produtos de um pedido.
+- Cadastro, consulta e atualização de categorias;
+- Listagem de todas as categorias;
 
 ## Tecnologias utilizadas
 
-- Java 8
-- SpringBoot 2.5.0
+- Java 17
+- SpringBoot 2.6.3
 - MySQL
 - Hibernate
+- JWT
 - Maven
 
 ## Como executar o projeto
@@ -36,30 +33,13 @@ Para executar o projeto, siga os passos abaixo:
 
 | Endpoint | Método HTTP | Descrição |
 | -------- | ----------- | --------- |
-| /produtos | GET | Retorna todos os produtos |
-| /produtos/{id} | GET | Retorna um produto específico |
-| /produtos | POST | Cadastra um novo produto |
-| /produtos/{id} | PUT | Atualiza um produto existente |
-| /produtos/{id} | DELETE | Exclui um produto existente |
-| /produtos/categoria/{categoria} | GET | Retorna todos os produtos de uma categoria específica |
-| /clientes | GET | Retorna todos os clientes |
-| /clientes/{id} | GET | Retorna um cliente específico |
-| /clientes | POST | Cadastra um novo cliente |
-| /clientes/{id} | PUT | Atualiza um cliente existente |
-| /clientes/{id} | DELETE | Exclui um cliente existente |
-| /pedidos | GET | Retorna todos os pedidos |
-| /pedidos/{id} | GET | Retorna um pedido específico |
-| /pedidos | POST | Cadastra um novo pedido |
-| /pedidos/{id} | PUT | Atualiza um pedido existente |
-| /pedidos/{id} | DELETE | Exclui um pedido existente |
-| /pedidos/cliente/{id} | GET | Retorna todos os pedidos de um cliente específico |
-| /pedidos/{id}/adicionar-produto/{produtoId} | PUT | Adiciona um produto a um pedido |
-| /pedidos/{id}/remover-produto/{produtoId} | PUT | Remove um produto de um pedido |
+| /user/signup | POST | Cadastro de usuário |
+| /user/login | POST | Login de usuário |
+| /user/get | GET | Busca usuários |
+| /user/update | POST | Atualiza usuários |
+| /user/changePassword | POST | Atualiza senha de usuário |
+| /user/forgotPassword | POST | Função esqueceu senha |
 
-## Documentação da API
+## Finalidade
 
-A documentação da API está disponível no endpoint `/swagger-ui.html`.
-
-## Autor
-
-Este projeto foi desenvolvido por [seu nome aqui] e tem como objetivo servir como exemplo de aplicação backend utilizando Java e SpringBoot.
+Este projeto foi feito exclusivamente para fins acadêmicos e tem como objetivo servir como exemplo de aplicação backend utilizando Java e SpringBoot.
