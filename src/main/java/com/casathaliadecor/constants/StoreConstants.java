@@ -32,6 +32,8 @@ public class StoreConstants {
     public static final String PRODUCT_UPDATED_SUCCESSFULLY = "Produto alterado com sucesso.";
     public static final String PRODUCT_DELETED_SUCCESSFULLY = "Produto removido com sucesso.";
     public static final String PRODUCT_STATUS_UPDATED_SUCCESSFULLY = "Status do produto alterado com sucesso.";
+    public static final String REQUIRED_DATA_NOT_FOUND = "Dados não encontrados.";
+    public static final String STORE_LOCATION = "C:\\reports";
 
     private StoreConstants() {}
 }

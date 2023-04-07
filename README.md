@@ -5,6 +5,7 @@ Este é um projeto de backend em Java com SpringBoot para uma API que permite o 
 ## Funcionalidades
 
 - Cadastro, login, consulta, atualização e exclusão de usuários;
+- Cadastro, consulta, atualização e exclusão de produtos;
 - Listagem de todos os usuários;
 - Listagem de produtos por categoria;
 - Cadastro, consulta e atualização de categorias;
@@ -31,17 +32,24 @@ Para executar o projeto, siga os passos abaixo:
 
 ## Endpoints disponíveis
 
-| Endpoint | Método HTTP | Descrição |
-| -------- | ----------- | --------- |
-| /user/signup | POST | Cadastro de usuário |
-| /user/login | POST | Login de usuário |
-| /user/get | GET | Busca usuários |
-| /user/update | POST | Atualiza usuários |
-| /user/changePassword | POST | Atualiza senha de usuário |
-| /user/forgotPassword | POST | Função esqueceu senha |
-| /category/add | POST | Adicionar nova categoria |
-| /category/get | POST | Buscar categorias |
-| /category/update | POST | Alterar categoria |
+| Endpoint        | Método HTTP | Descrição                    |
+|-----------------|-------------|------------------------------|
+| /user/signup    | POST        | Cadastro de usuário          |
+| /user/login     | POST        | Login de usuário             |
+| /user/get       | GET         | Busca usuários               |
+| /user/update    | POST        | Atualiza usuários            |
+| /user/changePassword | POST        | Atualiza senha de usuário    |
+| /user/forgotPassword | POST        | Função esqueceu senha        |
+| /category/add   | POST        | Adicionar nova categoria     |
+| /category/get   | POST        | Buscar categorias            |
+| /category/update | POST        | Alterar categoria            |
+| /product/add    | POST        | Adicionar produto            |
+| /product/get    | GET         | Buscar todos os produtos     |
+| /product/update | POST        | Alterar categoria            |
+| /product/delete/{id}   | POST        | Remover produto por ID       |
+| /product/updateStatus  | POST        | Atualizar Produto            |
+| /product/getByCategory/{id}    | GET         | Buscar produtos por categoria |
+| /product/getById/{id}    | GET         | Buscar produto por ID        |
 
 ## Finalidade
 
