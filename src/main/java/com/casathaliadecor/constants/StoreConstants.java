@@ -27,6 +27,11 @@ public class StoreConstants {
     public static final String BAD_CREDENTIALS = "Bad Credentials";
     public static final String UNEXISTENT_CATEGORY_ID = "ID de categoria inexistente.";
     public static final String CATEGORY_UPDATED_SUCCESSFULLY = "Categoria alterada com sucesso.";
+    public static final String PRODUCT_ADDED_SUCCESSFULLY = "Produto adicionado com sucesso.";
+    public static final String UNEXISTENT_PRODUCT_ID = "ID de produto inexistente.";
+    public static final String PRODUCT_UPDATED_SUCCESSFULLY = "Produto alterado com sucesso.";
+    public static final String PRODUCT_DELETED_SUCCESSFULLY = "Produto removido com sucesso.";
+    public static final String PRODUCT_STATUS_UPDATED_SUCCESSFULLY = "Status do produto alterado com sucesso.";
 
     private StoreConstants() {}
 }

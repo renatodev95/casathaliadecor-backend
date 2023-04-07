@@ -6,7 +6,8 @@ import org.springframework.http.ResponseEntity;
 
 public class StoreUtils {
 
-    private StoreUtils() {}
+    private StoreUtils() {
+    }
 
     public static ResponseEntity<String> getResponseEntity(String responseMessage, HttpStatus httpStatus) {
         return new ResponseEntity<>(StoreConstants.MESSAGE_TEMPLATE_START + responseMessage +
@@ -68,5 +69,25 @@ public class StoreUtils {
 
     public static ResponseEntity<String> categoryUpdatedSuccessfully() {
         return getResponseEntity(StoreConstants.CATEGORY_UPDATED_SUCCESSFULLY, HttpStatus.OK);
+    }
+
+    public static ResponseEntity<String> productAddedSuccessfully() {
+        return getResponseEntity(StoreConstants.PRODUCT_ADDED_SUCCESSFULLY, HttpStatus.OK);
+    }
+
+    public static ResponseEntity<String> productIdDoesNotExist() {
+        return getResponseEntity(StoreConstants.UNEXISTENT_PRODUCT_ID, HttpStatus.OK);
+    }
+
+    public static ResponseEntity<String> productUpdatedSuccessfully() {
+        return getResponseEntity(StoreConstants.PRODUCT_UPDATED_SUCCESSFULLY, HttpStatus.OK);
+    }
+
+    public static ResponseEntity<String> productDeletedSuccessfully() {
+        return getResponseEntity(StoreConstants.PRODUCT_DELETED_SUCCESSFULLY, HttpStatus.OK);
+    }
+
+    public static ResponseEntity<String> productStatusUpdatedSuccessfully() {
+        return getResponseEntity(StoreConstants.PRODUCT_STATUS_UPDATED_SUCCESSFULLY, HttpStatus.OK);
     }
 }
