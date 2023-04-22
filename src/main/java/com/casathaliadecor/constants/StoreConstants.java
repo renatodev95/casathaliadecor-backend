@@ -23,7 +23,7 @@ public class StoreConstants {
     public static final String CHECK_YOUR_EMAIL = "Verifique seu email para credenciais de acesso.";
     public static final String CREDENTIALS_CONFIRMATION = "Credenciais de acesso para o Sistema de gerenciamento de Casa Thália Decorações.";
     public static final String PASSWORD_CHANGED_SUCCESSFULLY = "Senha atualizada com sucesso.";
-    public static final String INCORRECT_OLD_PASSWORD = "Velha senha incorreta.";
+    public static final String INCORRECT_OLD_PASSWORD = "Senha antiga incorreta.";
     public static final String BAD_CREDENTIALS = "Bad Credentials";
     public static final String UNEXISTENT_CATEGORY_ID = "ID de categoria inexistente.";
     public static final String CATEGORY_UPDATED_SUCCESSFULLY = "Categoria alterada com sucesso.";
