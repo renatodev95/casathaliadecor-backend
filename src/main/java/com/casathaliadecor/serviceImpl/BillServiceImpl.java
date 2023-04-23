@@ -228,8 +228,8 @@ public class BillServiceImpl implements BillService {
     }
 
     private String createDataString(Map<String, Object> requestMap) {
-        return "Name: " + requestMap.get("name") + "\n" +
-                "Contact Number: " + requestMap.get("contactNumber") + "\n" +
+        return "Nome: " + requestMap.get("name") + "\n" +
+                "Telefone: " + requestMap.get("contactNumber") + "\n" +
                 "Email: " + requestMap.get("email") + "\n" +
                 "Método de Pagamento: " + requestMap.get("paymentMethod");
     }
