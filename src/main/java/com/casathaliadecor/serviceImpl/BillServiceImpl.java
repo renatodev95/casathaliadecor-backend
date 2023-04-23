@@ -130,9 +130,9 @@ public class BillServiceImpl implements BillService {
             Optional<Bill> optional = billDao.findById(id);
             if (optional.isPresent()) {
                 billDao.deleteById(id);
-                return StoreUtils.getResponseEntity("Bill removido com sucesso", HttpStatus.OK);
+                return StoreUtils.getResponseEntity("Pedido removido com sucesso", HttpStatus.OK);
             }
-            return StoreUtils.getResponseEntity("Bill ID inexistente", HttpStatus.OK);
+            return StoreUtils.getResponseEntity("Pedido ID inexistente", HttpStatus.OK);
         } catch (Exception ex) {
             ex.printStackTrace();
         }

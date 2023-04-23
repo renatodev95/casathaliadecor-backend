@@ -106,7 +106,7 @@ public class StoreUtils {
     public static String getUUID() {
         Date date = new Date();
         long time = date.getTime();
-        return "BILL-" + time;
+        return "PEDIDO-" + time;
     }
 
     public static JSONArray getJsonArrayFromString(String data) throws JSONException {
